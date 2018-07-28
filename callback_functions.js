@@ -1,33 +1,37 @@
+// Example 1
+
 // function greetUser(name) {
-//     alert(name);
+//     alert('Welcome, ' + name);
 // }
 
 // function getNameAndGreet(greet) {
-//     // Greet function acting as callback function in this function
-//     greet('user1');
+//     // greetUser is acts as the callback function here....
+//     var userName = prompt("What's your good Name?");
+//     greet(userName);
 // }
 
 // getNameAndGreet(greetUser);
 
-function add(num1, num2) {
-    return num1 + num2;
+// Example 2
+
+function add(n1, n2) {
+    return n1 + n2;
 }
 
-function substract(num1, num2) {
-    return num1 - num2;
+function substract(n1, n2) {
+    return n1 - n2;
 }
 
-function multiply(num1, num2) {
-    return num1 * num2;
+function multiply(n1, n2) {
+    return n1 * n2;
 }
 
-function divide(num1, num2) {
-    return num1 / num2;
+function divide(n1, n2) {
+    return n1 / n2;
 }
 
 function calculate(num1, num2, operation) {
-    var result = operation(num1, num2);
-    console.log(result);
+    return operation(num1, num2);
 }
 
-calculate(10, 20, multiply);
+alert(calculate(10, 2, add));
